@@ -1,0 +1,28 @@
+{
+    "always_show_minimap_viewport": true,
+    "bold_folder_labels": true,
+    "caret_style": "phase",
+    "color_scheme": "Packages/Color Scheme - Default/Monokai.sublime-color-scheme",
+    "draw_minimap_border": true,
+    "ensure_newline_at_eof_on_save": true,
+    "fade_fold_buttons": false,
+    "font_size": 11,
+    "highlight_line": true,
+    "ignored_packages":
+    [
+        "Vintage"
+    ],
+    "inactive_panes_dim_color": "#7F7F7F",
+    "inactive_panes_dim_strength": 0.2,
+    "material_theme_appbar_charcoal": true,
+    "material_theme_tree_headings": true,
+    "mini_diff": false,
+    "overlay_scroll_bars": "disabled",
+    "show_definitions": true,
+    "show_git_status": false,
+    "theme": "Material-Theme-Darker.sublime-theme",
+    "translate_tabs_to_spaces": true,
+    "trim_automatic_white_space": true,
+    "trim_trailing_white_space_on_save": true,
+    "word_wrap": true
+}
