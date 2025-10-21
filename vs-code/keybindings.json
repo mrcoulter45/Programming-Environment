@@ -1,0 +1,94 @@
+// Place your key bindings in this file to override the defaults
+[
+  // remove line
+  {
+    "key": "cmd+shift+c",
+    "command": "editor.action.deleteLines",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+
+  // jump to matching bracket/braces
+  // NOTE: macOS may steal ⌘M (Minimize). If it doesn't fire, use ⌥⌘M or change the macOS shortcut.
+  {
+    "key": "cmd+m",
+    "command": "editor.action.jumpToBracket",
+    "when": "editorTextFocus"
+  },
+
+  // duplicate line (or selection) downward
+  // (Sublime: duplicate_line)
+  {
+    "key": "cmd+shift+d",
+    "command": "editor.action.copyLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+
+  // swap line up
+  {
+    "key": "cmd+shift+up",
+    "command": "editor.action.moveLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+
+  // swap line down
+  {
+    "key": "cmd+shift+down",
+    "command": "editor.action.moveLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+
+  // multi-cursor: add next occurrence (find_under_expand)
+  {
+    "key": "cmd+d",
+    "command": "editor.action.addSelectionToNextFindMatch",
+    "when": "editorFocus"
+  },
+
+  // split selection into lines (cursor on each selected line end)
+  {
+    "key": "cmd+shift+l",
+    "command": "editor.action.insertCursorAtEndOfEachLineSelected",
+    "when": "editorTextFocus"
+  },
+
+  // block comment selected lines
+  {
+    "key": "cmd+shift+/",
+    "command": "editor.action.blockComment",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+
+  // new line below and move cursor
+  {
+    "key": "cmd+enter",
+    "command": "editor.action.insertLineAfter",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+
+  // new line above and move cursor
+  {
+    "key": "cmd+shift+enter",
+    "command": "editor.action.insertLineBefore",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+
+  // copy relative path of currently open file
+  { "key": "f2", "command": "copyRelativeFilePath" },
+
+  // copy relative path of focused file in 'Quick Open' menu (cmd + p)
+  {
+    "key": "f1",
+    "command": "multiCommand.openCopyClose",
+    "when": "inQuickOpen"
+  },
+
+  // focus editor
+  {
+    "key": "ctrl+1",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "true"
+  },
+
+  // focus Codex
+  { "key": "ctrl+2", "command": "workbench.view.extension.codexViewContainer" }
+]

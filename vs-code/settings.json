@@ -1,0 +1,69 @@
+{
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "workbench.colorTheme": "Sublime Monokai",
+  "diffEditor.wordWrap": "on",
+  "editor.minimap.showSlider": "always",
+  // CMD + F (search settings)
+  "workbench.colorCustomizations": {
+    // In-editor find matches (Cmd/Ctrl+F)
+    "editor.findMatchBackground": "#ff00000a", // current match fill
+    "editor.findMatchBorder": "#ff0000", // current match border
+    "editor.findMatchHighlightBackground": "#ff00000a", // other matches fill
+    "editor.findMatchHighlightBorder": "#ff0000", // other matches border
+    "editor.rangeHighlightBackground": "#da10b519", // Line highlight for search ranges
+
+    // Selection-like highlights triggered by find/selection
+    "editor.selectionHighlightBackground": "#ff00000a",
+    "editor.selectionHighlightBorder": "#ff0000",
+
+    // Overview ruler (right-side mini map bar) markers for matches
+    "editorOverviewRuler.findMatchForeground": "#ff00000a",
+
+    // Minimap stripes for matches
+    "minimap.findMatchHighlight": "#ff00003e",
+
+    // Search Editor (the special search results editor)
+    "searchEditor.findMatchBackground": "#ff000033",
+    "searchEditor.findMatchBorder": "#ff0000",
+    // cursor color
+    "editorCursor.foreground": "#ff0000"
+  },
+  // Keep indentation smart and consistent on paste
+  "editor.formatOnPaste": true,
+  "editor.autoIndent": "advanced",
+
+  // Cmd+Click create multiple cursors instead of Alt+Click
+  "editor.multiCursorModifier": "ctrlCmd",
+
+  // Copy file relative paths from the Cmd + P file search (Quick Open) menu
+  "multiCommand.commands": [
+    {
+      "command": "multiCommand.openCopyClose",
+      "sequence": [
+        "workbench.action.acceptSelectedQuickOpenItem",
+        {
+          "command": "copyRelativeFilePath"
+        },
+        "workbench.action.closeActiveEditor"
+      ]
+    }
+  ],
+
+  // Add a newline at the end of every file on save
+  "files.insertFinalNewline": true,
+
+  // Trim whitespace from the end of all lines on save
+  "files.trimTrailingWhitespace": true,
+
+  "diffEditor.maxComputationTime": 30000,
+  "editor.cursorBlinking": "solid",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.wordWrap": "on",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "material-icon-theme.folders.theme": "classic",
+  "github.copilot.nextEditSuggestions.enabled": true
+}
